@@ -30,9 +30,23 @@
     </section>
     <main id="main-section">
         <section class="review">
-            <img src="asset/asset1.jpg" alt="">
-            <i>"Liburan jadi menyenangkan bersama travel agen Crimson"</i>
+            <div class="slideshow-container">
+                <div class="mySlide">
+                    <img src="assets/asset1.jpg" alt="">
+                </div>
+                <div class="mySlide">
+                    <img src="assets/asset2.jpg" alt="">
+                </div>
+                <div class="mySlide">
+                    <img src="assets/assets3.jpg" alt="" >
+                </div>
+            </div>
+            <div class="tombol">
+                <button plusSlides(-1)">Previous</button>
+                <button onclick="plusSlides(1)">Next</button>            
+            </div>
             <section id="customized-packages">
+                <i>"Liburan jadi menyenangkan bersama travel agen Crimson"</i>
                 <h2>Paket Liburan Disesuaikan</h2>
                 <p>Kami memahami setiap pelanggan memiliki preferensi unik. Dengan layanan kami, Anda dapat membuat
                     paket liburan sesuai dengan keinginan Anda. Pilih destinasi, aktivitas, dan akomodasi sesuai selera
@@ -56,13 +70,17 @@
                 <input type="text" id="email-input" name="name" placeholder="example@gmail.com">
                 <label for="destination" class="destination">Tourist Destination:</label>
                 <select id="destination" name="destination" required>
+                    <option value=""></option>
                     <option value="grand canyon">Grand Canyon</option>
+                    <option value="Zermatt Valley Switzerland">Zermatt Valley Switzerland</option>
+                    <option value="Bali">Bali</option>
                 </select>
 
                 <button type="button" class="primary-button">Submit</button>
             </form>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
