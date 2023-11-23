@@ -27,21 +27,22 @@ setInterval(() => {
     plusSlides(1);
 }, 3000)
 
+// validasi nama email
 function validateForm() {
     var name = document.getElementById("name-input").value;
     var email = document.getElementById("email-input").value;
 
-    // Reset error messages
+
     document.getElementById("name-error").innerHTML = "";
     document.getElementById("email-error").innerHTML = "";
 
-    // Validate Name
+
     if (name.trim() === "") {
         document.getElementById("name-error").innerHTML = "Nama tidak boleh kosong";
         return false;
     }
 
-    // Validate Email
+
     if (email.trim() === "") {
         document.getElementById("email-error").innerHTML = "Email tidak boleh kosong";
         return false;
